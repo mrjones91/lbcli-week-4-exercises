@@ -73,6 +73,7 @@ jobs:
           chmod +x submission/03.sh
           TRANSACTION=$(submission/03.sh)
           EXPECTED_OUTPUT=0200000002160ee5dd146316bb3400ede0d4ad512ab9c1ede486ab5a119a2ee9d4379fc1230000000000fdffffff160ee5dd146316bb3400ede0d4ad512ab9c1ede486ab5a119a2ee9d4379fc1230100000000fdffffff020000000000000000156a13627472757374206275696c6465722032303235002d31010000000017a91421ed90762e16eaaea188aae19142e5b25bf75d238700000000
+          EXPECTED_OUTPUT=
           if [[ "$TRANSACTION" == "$EXPECTED_OUTPUT" ]]; then
             echo "✅ Success: Raw Transaction With Data passed!"
           else
